@@ -176,7 +176,7 @@ function loadVideo(video, callback)
 
 function detectSourceType(source)
 {
-  if (source instanceof File) {
+  if (source instanceof Blob) {
     return "File"
   }
   if (source instanceof HTMLImageElement) {
